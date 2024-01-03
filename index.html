@@ -7,9 +7,22 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="mouseup">
+    <h1>Etchy Sketchy</h1>
+    <div class="options">
+        <div class="sliderOptions">
+            <div class="text">            
+                <p class="penSize">pen size:</p>
+                <p class="sliderValue">50 px</p>
+            </div>
+            <input type="range" min="20" max="100" value="50" class="slider" id="myRange">
+        </div>
+        <input type="color" id="colorpicker" value="#0000ff">
+        <button class="reset">reset</button>
+    </div>
+
     <div class="content">
-        <div class = "sketchBoard"> 
+        <div class = "sketchBoard mouseup"> 
         </div>
     </div>
 

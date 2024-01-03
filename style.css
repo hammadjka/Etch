@@ -1,21 +1,62 @@
 html,body{
     margin: 0px;
     height: 100%;
+    background-color: darkgray;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    text-align: center;
+}
+.options{
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    align-items: center;
+}
+.sliderOptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+}
+.text{
+    display: flex;
+    width: 160px;
+    gap: 10px;
+    justify-content: space-between;
+}
+.slider {
+    background: lightgoldenrodyellow; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    width: 160px;
+}
+button{
+    border-radius: 10%;
+    font-size: large;
+    background-color:lightgoldenrodyellow;
 }
 .content{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin-top: 50px;
+
 }
 .sketchBoard{
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-content: center;
-    width: min-content;
-    height: min-content;
-    border: solid black;
+    width: 480px;
+    height: 480px;
+    border: 0px solid black;
+    background-color: white;
 }
 .row{
     display: flex;
