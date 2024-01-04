@@ -12,17 +12,22 @@
     <div class="options">
         <div class="sliderOptions">
             <div class="text">            
-                <p class="penSize">pen size:</p>
-                <p class="sliderValue">50 px</p>
+                <p class="penSize">Boxes:</p>
+                <p class="sliderValue">50x50</p>
             </div>
-            <input type="range" min="20" max="100" value="50" class="slider" id="myRange">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
         </div>
-        <input type="color" id="colorpicker" value="#0000ff">
-        <button class="reset">reset</button>
     </div>
-
     <div class="content">
-        <div class = "sketchBoard mouseup"> 
+        <div id="buttons">
+            <input type="color" id="colorpicker" value="#0000ff">
+            <button id="randomRGB">random color</button>
+            <button id="progressive">progressive</button>
+            <button class="reset">reset</button>
+        </div>
+        <div id="board">
+            <div class = "sketchBoard mouseup"> 
+            </div>
         </div>
     </div>
 
